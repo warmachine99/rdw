@@ -162,13 +162,13 @@
                 
                  <script>
                       $( function() {
-                        $( "#drlicensevalid" ).datepicker();
+                        $( "#drlicensevalid" ).datepicker({dateFormat: 'yy-mm-dd'});
                       } );
                 </script> 
 
                 <script>
                       $( function() {
-                        $( "#doi" ).datepicker();
+                        $( "#doi" ).datepicker(dateFormat: 'yy-mm-dd');
                       } );
                 </script> 
               
