@@ -25,7 +25,7 @@
         $vregdate= $_POST['regdate'];
         $vpicture= $_FILES['image']['name'];
         $target = "vehiclepicture/".basename($_FILES['image']['name']);
-        //image Upload
+        //image Upload hi
 
 
       
