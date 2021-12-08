@@ -122,16 +122,13 @@
                 
               
                 
-                 <script>
+                  <script>
                       $( function() {
                         $( "#dob" ).datepicker({
                           dateFormat: 'yy-mm-dd'
                         });
                       } );
-
-                      
-                      
-                </script> 
+                  </script> 
                 
                  <div class="input-group">
                   <span class="input-group-addon"><b>Nationality</b></span>
@@ -148,19 +145,23 @@
 
                 <div class="input-group">
                   <span class="input-group-addon"><b>Date of issue</b></span>
-                  <input id="doi" type="text" class="form-control" name="doi" placeholder="issue date">
+                  <input id="doi" type="text" class="form-control" name="doi" placeholder="yyyy-mm-dd">
                 </div>
                 <br>
 
                 <script>
                       $( function() {
-                        $( "#doi" ).datepicker(dateFormat: 'yy-mm-dd');
+                        $( "#doi" ).datepicker({
+                          dateFormat: 'yy-mm-dd'
+                        });
                       } );
-                </script> 
+                  </script> 
+
+              
                 
                  <div class="input-group">
                   <span class="input-group-addon"><b>Expiry Date</b></span>
-                  <input id="drlicensevalid" type="text" class="form-control" name="drlicensevalid" placeholder="Validity date">
+                  <input id="drlicensevalid" type="text" class="form-control" name="drlicensevalid" placeholder="yyyy-mm-dd">
                 </div>
                 <br>
 
