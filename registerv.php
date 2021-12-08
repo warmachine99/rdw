@@ -32,8 +32,7 @@
         
         $res=false;
         $vquery="INSERT INTO vehicle (regno, type, chasisno, brand, color, regdate, picture) VALUES ('$vregno','$vtype','$vchasisno','$vbrand','$vcolor','$vregdate','$target')";
-        // echo $vquery;
-        // return;
+        // 
         $res= mysqli_query($conn,$vquery);
 
         if (move_uploaded_file($_FILES['image']['tmp_name'], $target)){

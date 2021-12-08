@@ -42,7 +42,7 @@
             <hr>
            <div class="col-sm-3">
                    <div class="fb-profile">
-                        <img height="250" width="250" align="left" class="fb-image-profile thumbnail userpic" src="picture/<?php echo $row['dphoto'] ?>" alt="dp"/>
+                        <img height="250" width="250" align="left" class="fb-image-profile thumbnail userpic" src="picture/<?php echo $row['drphoto'] ?>" alt="dp"/>
                     </div>
            </div> 
            
@@ -68,12 +68,6 @@
                       <p>
                         <?php echo $row['drname']; ?> 
                       </p>
-                      <!--
-                      <h4><strong>Skills</strong></h4>
-                      <p><?php echo $skills; ?></p>
-                      -->
-
-                      
                       <h4><strong>License ID:</strong></h4>
                       <p><?php echo $row['drlicense']; ?></p>
                       
