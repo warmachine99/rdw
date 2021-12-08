@@ -93,14 +93,14 @@ session_start();
 
       <div class="carousel-inner">
           <div class="carousel-item active">
-              <img class="d-block w-100" src="../Assets/Images/Carousel/shoes.jpg" alt="First slide" style="object-fit: cover;">
+              <img class="d-block w-100" src="images/c4.jpeg" alt="First slide" style="object-fit: contain;">
               <div class="carousel-caption text-start d-none d-md-block">
                   <p>Register Now</p>
-                  <p><a class="btn btn-lg btn-primary border-white bg-white text-black" href="registerv.php">Shop Now</a></p>
+                  <p><a class="btn btn-lg btn-primary border-white bg-white text-black" href="registerv.php">Register</a></p>
               </div>
           </div>
 
-          <div class="carousel-item">
+          <!-- <div class="carousel-item">
               <img class="d-block w-100" src="../Assets/Images/Carousel/bags.jpg" alt="Second slide" style="object-fit: cover;">
               <div class="carousel-caption text-start d-none d-md-block">
                 <h1>Have a look aat your License</h1>
@@ -116,7 +116,7 @@ session_start();
                 <p><a class="btn btn-lg btn-primary border-white bg-white text-black" href="contct.php">Shop Now</a></p>
               </div>
           </div>
-      </div>
+      </div> -->
 
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -142,7 +142,7 @@ session_start();
         <p class="lead">Overspeeding Kills safe a life, Go the speed limit.</p>
       </div>
       <div class="col-md-5">
-        <img src="../images\ /dnd.jpg" class="featurette-image img-fluid mx-auto" alt="dnd" width="500" height="500" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <img src="images/dnd.jpg" class="featurette-image img-fluid mx-auto" alt="dnd" width="500" height="500" preserveAspectRatio="xMidYMid slice" focusable="false">
       </div>
     </div>
 
@@ -154,7 +154,7 @@ session_start();
         <p class="lead">Drive with creditation</p>
       </div>
       <div class="col-md-5 order-md-1">
-        <img src="../Assets/Images/Carousel/below/1-initi.jpg" class="featurette-image img-fluid mx-auto" alt="shoes" width="500" height="500" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <img src="images/reg.jpeg" class="featurette-image img-fluid mx-auto" alt="shoes" width="500" height="500" preserveAspectRatio="xMidYMid slice" focusable="false">
 
       </div>
     </div>

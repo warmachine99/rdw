@@ -5,7 +5,11 @@
 }
 /* log in form */
 body{
-background-image: url(/images/c2.jpg);
+
+background-image: url(../images/c2.jpg);
+background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 
 }
 
