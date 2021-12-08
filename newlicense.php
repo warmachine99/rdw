@@ -110,7 +110,7 @@
                 
                  <div class="input-group">
                   <span class="input-group-addon"><b>Date of Birth</b></span>
-                  <input id="dob" type="text" class="form-control" name="dob" placeholder="yyyy/mm/dd">
+                  <input id="dob" type="text" class="form-control" name="dob" placeholder="yyyy-mm-dd">
                 </div>
                 <br> 
                 
@@ -130,7 +130,7 @@
                       } );
 
                       
-});
+                      
                 </script> 
                 
                  <div class="input-group">
@@ -151,12 +151,19 @@
                   <input id="doi" type="text" class="form-control" name="doi" placeholder="issue date">
                 </div>
                 <br>
+
+                <script>
+                      $( function() {
+                        $( "#doi" ).datepicker(dateFormat: 'yy-mm-dd');
+                      } );
+                </script> 
                 
                  <div class="input-group">
                   <span class="input-group-addon"><b>Expiry Date</b></span>
                   <input id="drlicensevalid" type="text" class="form-control" name="drlicensevalid" placeholder="Validity date">
                 </div>
                 <br>
+
                 
               
                 
@@ -166,11 +173,7 @@
                       } );
                 </script> 
 
-                <script>
-                      $( function() {
-                        $( "#doi" ).datepicker(dateFormat: 'yy-mm-dd');
-                      } );
-                </script> 
+               
               
                
                 
