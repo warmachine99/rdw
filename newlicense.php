@@ -110,7 +110,7 @@
                 
                  <div class="input-group">
                   <span class="input-group-addon"><b>Date of Birth</b></span>
-                  <input id="dob" type="text" class="form-control" name="dob" placeholder="dd/mm/yy">
+                  <input id="dob" type="text" class="form-control" name="dob" placeholder="yyyy/mm/dd">
                 </div>
                 <br> 
                 
@@ -124,8 +124,13 @@
                 
                  <script>
                       $( function() {
-                        $( "#dob" ).datepicker();
+                        $( "#dob" ).datepicker({
+                          dateFormat: 'yy-mm-dd'
+                        });
                       } );
+
+                      
+});
                 </script> 
                 
                  <div class="input-group">
