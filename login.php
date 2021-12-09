@@ -30,7 +30,8 @@ if(isset($_POST['login_user'])){
         if($password== $row1['password']){
           session_start();
           
-          $_SESSION['user_id'] = $row1['id']; 
+          $_SESSION['user_id'] = $row1['userid']; 
+          
           header("location: main.php");
 
 
@@ -44,11 +45,11 @@ if(isset($_POST['login_user'])){
     }
  
 
-
-
-    
-
-
 }
 
+// create a page which lists all the signed up users with buttons href='newlicense.php?did='
+    // select id, name from users
+// hidden field with driver's id (foreign key)
+
 ?>
+<input type="hidden" value="<?= $_GET['did'] ?>" name="foreign_key">

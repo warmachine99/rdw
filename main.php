@@ -59,17 +59,13 @@ session_start();
          
         </ul>
 
-        <ul class="nav navbar-nav navbar-right">
-            <div class="text-right">
-            <ul class="nav navbar-nav navbar-right">
-
-                <li> <a href="logout.php" class="btn btn-outline-success">LOG OUT</a></li>
-                
-            </div>
-        </ul>
-        <form class="d-flex">
-           
-        </form>
+       
+          <ul class="nav navbar-nav navbar-right">
+           <li> <a href="logout.php" class="btn btn-outline-success">LOG OUT</a></li>
+          </ul>
+      
+        
+       
       </div>
     </div>
   </nav>
@@ -99,24 +95,6 @@ session_start();
                   <p><a class="btn btn-lg btn-primary border-white bg-white text-black" href="registerv.php">Register</a></p>
               </div>
           </div>
-
-          <!-- <div class="carousel-item">
-              <img class="d-block w-100" src="../Assets/Images/Carousel/bags.jpg" alt="Second slide" style="object-fit: cover;">
-              <div class="carousel-caption text-start d-none d-md-block">
-                <h1>Have a look aat your License</h1>
-                <p><a class="btn btn-lg btn-primary border-white bg-white text-black" href="driverprof.php">Shop Now</a></p>
-              </div>
-          </div>
-
-          <div class="carousel-item">
-              <img class="d-block w-100" src="../Assets/Images/Carousel/accessory.jpg" alt="Third slide" style="object-fit: cover;">
-              <div class="carousel-caption text-start d-none d-md-block">
-                <h1>Want to take the drivers test?</h1>
-                <p>Call us!</p>
-                <p><a class="btn btn-lg btn-primary border-white bg-white text-black" href="contct.php">Shop Now</a></p>
-              </div>
-          </div>
-      </div> -->
 
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>

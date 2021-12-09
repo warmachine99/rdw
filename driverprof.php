@@ -2,11 +2,14 @@
     $connection= mysqli_connect("localhost","root","","rdw");
     session_start();
 
-    $driverid= $_GET['driverid']; 
+    $driverid=$_SESSION['user_id']; 
 
     $sql= "SELECT * FROM driver WHERE driverid='$driverid'"; 
     $res= mysqli_query($connection,$sql);
     $row= mysqli_fetch_assoc($res);
+
+    // echo $sql;
+    // return;
 
     
 ?>
@@ -42,7 +45,7 @@
             <hr>
            <div class="col-sm-3">
                    <div class="fb-profile">
-                        <img height="250" width="250" align="left" class="fb-image-profile thumbnail userpic" src="picture/<?php echo $row['drphoto'] ?>" alt="dp"/>
+                        <img height="250" width="250" align="left" class="fb-image-profile thumbnail userpic" src="lcpic/<?php echo $row['drphoto'] ?>" alt="dp"/>
                     </div>
            </div> 
            
@@ -55,10 +58,7 @@
                       About Me </a>
                     </li>
                     
-                    <li>
-                      <a href="#tab_default_2" data-toggle="tab">
-                     Contacts </a>
-                    </li>
+                   
                   </ul>
                   <div class="tab-content">
                     <div class="tab-pane active" id="tab_default_1">
@@ -87,22 +87,7 @@
 
 
                     </div>
-                    <div class="tab-pane" id="tab_default_2">
-                      <div class="row">
-                      <div class="col-sm-10">
-                       
-                          <div class="form-group">
-                             <label for="mobile">Mobile:</label>
-                              <p> <?php echo $row['dmobile']; ?> </p>
-                         </div>
-                          <div class="form-group">
-                             <label for="education3">Address:</label>
-                              <p><?php echo $row['daddress']; ?> </p>
-                         </div>
-                          
-                      </div>
-                      </div>
-                    </div> 
+          
                       
                       
                   </div>

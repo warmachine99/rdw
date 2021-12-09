@@ -15,7 +15,7 @@
         $pass="";
         $db="rdw";
 
-
+          
         $conn= mysqli_connect($host,$user,$pass,$db);
         $vregno= $_POST['regno'];
         $vtype= $_POST['type'];
@@ -35,12 +35,14 @@
         // 
         $res= mysqli_query($conn,$vquery);
 
-        if (move_uploaded_file($_FILES['image']['tmp_name'], $target)){
+        // echo $vquery;
+        //  return;
+
+        if (move_uploaded_file($_FILES['image']['tmp_name'], './'.$target)){
             $msg = " image uploaded";
         }else{
             $msg = "Error image not uploaded";
         }
-    
       
     }
     else{
@@ -187,16 +189,6 @@
 
                 <!-- cite the datepicker -->
                 
-                
-                
-                
-                <!--
-                 <div class="input-group">
-                  <span class="input-group-addon"><b>Photo</b></span>
-                  <input id="vehphoto" type="file" class="form-control" name="file">
-                </div>
-                <br>
-                -->
                 <div class="input-group">
                   <span class="input-group-addon"><b>Photo</b></span>
                   <input  type="file" class="form-control" name="image"> 

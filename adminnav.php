@@ -11,7 +11,7 @@
             <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="nav navbar-nav">
                     <li><a href="newlicense.php">Add New Driver</a></li>
-                   <li><a href="newvehicle.php">Add New Vehicle</a></li>  <!-- add insurance if possiible  -->
+                   <li><a href="updatev.php">Edit Vehicle</a></li>  <!-- add insurance if possiible  -->
                     <li><a href="deletedriver.php">Delete Driver Details</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">

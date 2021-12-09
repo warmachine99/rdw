@@ -13,7 +13,8 @@
     // REGISTER USER
     if (isset($_POST['submit'])) {
       // receive all input values from the form
-    if(isset($_POST['submit'])){
+      if(isset($_POST['submit'])){
+
         $firstname= mysqli_real_escape_string($conn,($_POST['firstname']));
         $lastname= mysqli_real_escape_string($conn,($_POST['lastname']));
         $email= mysqli_real_escape_string($conn,($_POST['email']));
@@ -26,8 +27,8 @@
         if (empty($lastname)) { array_push($errors, "lastname is required"); }
         if (empty($email)) { array_push($errors, "Email is required"); }
         if (empty($password)) { array_push($errors, "Password is required"); }
-      
-    }
+        
+      }
     
         $check_query= "SELECT * FROM `user` WHERE username='$username' or email='$email'";
         $checkres=mysqli_query($conn,$check_query);
@@ -50,7 +51,8 @@
                 $password = md5($password);//encrypt the password before saving in the database
 
                 $query = "INSERT INTO `user`(`firstname`, `lastname`, `email`, `username`, `password`) VALUES ('$firstname','$lastname','$email','$username','$password')"; 
-        
+                // echo $query;
+                // return;
       
                 mysqli_query($conn, $query);
                 $_SESSION['username'] = $username;
@@ -60,24 +62,6 @@
 
                 header('location: index.php');
               }
-
-        
-        
-        // if(mysqli_num_rows($checkres)>0){
-        //      $msg= '<div class="alert alert-warning" style="margin-top:30px";>
-        //               <strong>Failed!</strong> Username or Email already exists.
-        //               </div>';
-            
-        // }
-        
-        // else{
-        //     $signup_res= mysqli_query($conn, $query); 
-        //          $msg= '<div class="alert alert-success" style="margin-top:30px";>
-        //               <strong>Success!</strong> Registration Succefull.
-        //               </div>';
-            
-        // }
-        
     }
 
 ?>

@@ -1,20 +1,23 @@
 <?php
-   $conn=mysqli_connect('localhost','root','','rdw');
-   $sql="SELECT * FROM driver ";
-   $result=mysqli_query($conn,$sql);
-    if(!isset($_SESSION)) 
-    { 
-        session_start(); 
-    } 
    
+   $conn=mysqli_connect('localhost','root','','rdw');
+   $sql="SELECT * FROM  user  ";
+   $result=mysqli_query($conn,$sql);
+
+//    echo $sql;
+//    return;
+
+  
 ?>
+
+
 
 
 <!DOCTYPE html>   
 <html lang="en">   
 <head>   
 <meta charset="utf-8">   
-<title>Delete driver</title>   
+<title>Insert User Details</title>   
 <meta name="description" content="Bootstrap.">  
 <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">   
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -35,26 +38,28 @@
 
 <div class="row">
     <div class="page header">
-        <h3 style="text-align: center;">Driver List</h3>
+        <h3 style="text-align: center;">User List</h3>
 
     </div>
     
     <table id="myTable" class="table table-bordered" >  
 
         <thead>
-              <th>ID</th>
-              <th >Driver name</th>
+              <th>Firstname</th>
+              <th >Lastname</th>
               <th >Action</th>
         </thead>
 
         <tbody>
             <?php while($row=mysqli_fetch_assoc($result)){?>
               <tr>
-                <td> <?php echo $row['driverid']?> </td>
-                <td> <?php echo $row['drname']?> </td>
+                <td> <?php echo $row['firstname']?> </td>
+                <td> <?php echo $row['lastname']?> </td>
                 <td>
-                 
-                  <a class="btn btn-danger" onclick="return confirm('Are u sure?')" href="deletedr.php?id=<?php echo $row['driverid']; ?>">Delete</a>
+
+                  <a class="btn btn-danger" href="newlicense.php?did=<?php echo $row['users_id']; ?>">Insert</a>
+                  <input type="hidden" value="<?php echo $row = $_GET['did']; ?>" name="foreign_key">'
+                
                 </td>
               </tr>
               <?php }?>
@@ -66,9 +71,12 @@
 
 </div>
 </body>  
-<script>
-$(document).ready(function(){
-    $('#myTable').dataTable();
-});
-</script>
+
 </html>  
+
+
+'
+<!-- 
+// create a page which lists all the signed up users with buttons href='newlicense.php?did='
+    // select id, name from users
+// hidden field with driver's id (foreign key) -->

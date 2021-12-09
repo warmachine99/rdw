@@ -1,6 +1,6 @@
 <?php
    
-   $id= $_GET['id'];
+   $id= $_GET['driverid'];
 
    $conn=mysqli_connect('localhost','root','','rdw');
    $sql="DELETE FROM driver WHERE driverid='$id'";
