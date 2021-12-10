@@ -39,44 +39,20 @@
         //  return;
 
         if (move_uploaded_file($_FILES['image']['tmp_name'], './'.$target)){
-            $msg = " image uploaded";
+
+            echo'<script> alert("Vehicle has Been Registered");</script>';
+            
         }else{
-            $msg = "Error image not uploaded";
+            $msg = "Error Vehicle not Registered";
         }
+
+            header("location: main.php ");
       
     }
     else{
         echo 'not inserted';
     
     }
-
-    if(!$vquery){
-        echo'<script> alert("uncessful");</script>';
-    }
-    else{
-    
-        echo'<script> alert("successful");</script>';
-     
-        // header("location: Extra Pages/main.php ");
-        
-         //After this button what next
-    }
-    
-
-    //     if($res==true){
-    //      $msg= "<script language='javascript'>
-    //      swal(
-    //       'Success!',
-    //       'Registration Completed!',
-    //       'success'
-    //       );
-    //       </script>";
-    //     }
-        
-    // }
-    
-    //$msg="";
-
     
         
 ?>
@@ -180,12 +156,15 @@
                 <br>
                 
               
-                
-                 <script>
+                <script>
                       $( function() {
-                        $( "#regdate" ).datepicker();
+                        $( "#regdatev" ).datepicker({
+                          dateFormat: 'yy-mm-dd'
+                        });
                       } );
-                </script> 
+                  </script> 
+
+                
 
                 <!-- cite the datepicker -->
                 

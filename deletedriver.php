@@ -54,7 +54,7 @@
                 <td> <?php echo $row['drname']?> </td>
                 <td>
                  
-                  <a class="btn btn-danger" onclick="return confirm('Are u sure?')" href="deletedr.php?id=<?php echo $row['driverid']; ?>">Delete</a>
+                  <a class="btn btn-danger" onclick="return confirm('Are u sure?')" href="deletedr.php? id=<?php echo $row['driverid']; ?>">Delete</a>
                 </td>
               </tr>
               <?php }?>

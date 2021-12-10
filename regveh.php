@@ -10,7 +10,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>List of Drivers</title>
+    <title>Registered Vehicle</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
@@ -41,14 +41,18 @@
                     <thead>
                         <th>Vehicle Picture</th>
                         <th>Vehicle Registration No</th>
+                        <th> Registration Date</th>
                     </thead>  
 
                     <?php while($row=mysqli_fetch_assoc($res)) {  ?>
                     <tbody>
                         <tr>
-                            <td><img height="100px" width="100px" src="vehiclepicture/<?php echo $row["picture"]; ?>" alt="vehicle Pic"></td>
+                             
+                            <td><img height="200px" width="200px" src="<?php echo "vehiclepicture/".$row["picture"] ?>" alt="vehicle Pic"></td>
 
-                            <td><a href="driverprof.php?driverid=<?php echo $row["v_id"]; ?>"> <?php echo $row["regno"] ?></a></td>
+                            <td> <?php echo $row["regno"] ?></a></td>
+
+                            <td> <?php echo $row["regdate"] ?></a></td>
                         </tr>
                     </tbody> 
                 <?php } }?>

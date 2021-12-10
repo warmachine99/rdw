@@ -28,7 +28,7 @@
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <header class="mb-auto">
             <div>
-                <h3 class="float-md-start mb-0">Roadworthy</h3>
+                <h3 class="float-md-start mb-0" >Roadworthy</h3>
                 <nav class="nav nav-masthead justify-content-center float-md-end"></nav>
             </div>
         </header>
@@ -37,13 +37,13 @@
             <!--
         <h1>Cover your page.</h1> -->
             <p class="lead">Welcome to  Roadworthy.</p>
-            <p class="lead">A system that works for you</p>
+            <p class="lead">A system that works</p>
 
             <?php if(isset($_SESSION['username'])==true) { ?>
             <a class="btn btn-success" style="text-align: center" href="registerv.php"> Register Vehicle</a>
             
             <?php } else{  ?>
-            <a class="btn btn-success" style="text-align: center" href="login.php">Login to register your Vehicle</a> 
+            <a class="btn btn-success" style="text-align: center" href="index.php" >Login to register your Vehicle</a> 
             <?php } ?>
             
            

@@ -18,23 +18,18 @@ session_start();
     <link rel="manifest" href="/site.webmanifest">
 
     <title>ROADWORTHY&reg; Official Site</title>
-    
+
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">    
-    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
-    <link href="CustomStyling/carousel.css" rel="stylesheet">  
-    
+    <link href="CustomStyling/carousel.css" rel="stylesheet">
 
-
-    <style>
-      
-    </style>
 
   </head>
   <body>
-    
+
 <header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
@@ -48,7 +43,7 @@ session_start();
             <a class="nav-link active" aria-current="page" href="main.php">Home</a>
           </li>
           <li class="nav-item">
-             <a class="nav-link" href="regveh.php">Vehicle</a> 
+             <a class="nav-link" href="regveh.php">Vehicle</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="driverprof.php">License</a>
@@ -56,16 +51,14 @@ session_start();
           <li class="nav-item">
             <a class="nav-link" href="contact.php">contact</a>
           </li>
-         
-        </ul>
 
-       
+        </ul>
           <ul class="nav navbar-nav navbar-right">
            <li> <a href="logout.php" class="btn btn-outline-success">LOG OUT</a></li>
           </ul>
-      
-        
-       
+
+
+
       </div>
     </div>
   </nav>
@@ -79,7 +72,7 @@ session_start();
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  
+
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -89,10 +82,9 @@ session_start();
 
       <div class="carousel-inner">
           <div class="carousel-item active">
-              <img class="d-block w-100" src="images/c4.jpeg" alt="First slide" style="object-fit: contain;">
+              <img class="d-block w-100" src="images/c10.jpg" alt="First slide" style="object-fit: fit;">
               <div class="carousel-caption text-start d-none d-md-block">
-                  <p>Register Now</p>
-                  <p><a class="btn btn-lg btn-primary border-white bg-white text-black" href="registerv.php">Register</a></p>
+                  <p><a class="btn btn-success"href="registerv.php">Register Now</a></p>
               </div>
           </div>
 
@@ -111,20 +103,12 @@ session_start();
   ================================================== -->
   <!-- Wrap the rest of the page in another container to center all the content. -->
 
+  <hr class="featurette-divider">
+
+
+
   <div class="container marketing">
 
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Register your car with us  <span class="text-muted">Be safe</span></h2>
-        <p class="lead">Overspeeding Kills safe a life, Go the speed limit.</p>
-      </div>
-      <div class="col-md-5">
-        <img src="images/dnd.jpg" class="featurette-image img-fluid mx-auto" alt="dnd" width="500" height="500" preserveAspectRatio="xMidYMid slice" focusable="false">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
@@ -139,7 +123,17 @@ session_start();
 
     <hr class="featurette-divider">
 
-    
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Register your car with us  <span class="text-muted">Be safe</span></h2>
+        <p class="lead">Overspeeding Kills safe a life, Go the speed limit.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="images/dnd.jpg" class="featurette-image img-fluid mx-auto" alt="dnd" width="500" height="500" preserveAspectRatio="xMidYMid slice" focusable="false">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
 
     <!-- /END THE FEATURETTES -->
 
@@ -154,7 +148,7 @@ session_start();
 </main>
 
 
-      
+
   </body>
 </php>
 

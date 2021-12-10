@@ -40,12 +40,12 @@
         <div class="container">
           <div class="row"> 
           <div class="fb-profile-text" id="h1" >
-                            <h2><?php echo $row['drname']; ?></h2>
+              <h2><?php echo $row['drname']; ?></h2>
             </div>
             <hr>
            <div class="col-sm-3">
                    <div class="fb-profile">
-                        <img height="250" width="250" align="left" class="fb-image-profile thumbnail userpic" src="lcpic/<?php echo $row['drphoto'] ?>" alt="dp"/>
+                        <img height="200" width="200" align="left" class="fb-image-profile thumbnail userpic" src="lcpic/<?php echo $row['drphoto'] ?>" alt="dp"/>
                     </div>
            </div> 
            
