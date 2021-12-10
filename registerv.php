@@ -13,7 +13,7 @@
         $host="localhost";
         $user="root";
         $pass="";
-        $db="rdw";
+        $db="rdw1";
 
           
         $conn= mysqli_connect($host,$user,$pass,$db);
@@ -28,9 +28,7 @@
         //image Upload he
 
 
-      
         
-        $res=false;
         $vquery="INSERT INTO vehicle (regno, type, chasisno, brand, color, regdate, picture) VALUES ('$vregno','$vtype','$vchasisno','$vbrand','$vcolor','$vregdate','$target')";
         // 
         $res= mysqli_query($conn,$vquery);
@@ -46,7 +44,7 @@
             $msg = "Error Vehicle not Registered";
         }
 
-            header("location: main.php ");
+            // header("location: main.php ");
       
     }
     else{

@@ -1,5 +1,5 @@
 <?php
-    $conn= mysqli_connect('localhost', 'root', '', 'rdw');
+    $conn= mysqli_connect('localhost', 'root', '', 'rdw1');
 
     if (!$conn) {
         echo "<script>alert('Connection failed.');</script>";
@@ -30,7 +30,7 @@ if(isset($_POST['login_user'])){
         if($password== $row1['password']){
           session_start();
           
-          $_SESSION['user_id'] = $row1['userid']; 
+          $_SESSION['userid'] = $row1['userid']; 
           
           header("location: main.php");
 

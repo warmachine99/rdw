@@ -1,7 +1,7 @@
 <?php
    $id= $_GET['v_id'];
 
-   $conn=mysqli_connect('localhost','root','','rdw');
+   $conn=mysqli_connect('localhost','root','','rdw1');
    $sql="SELECT * FROM vehicle WHERE v_id='$id'";
    $result=mysqli_query($conn,$sql);
 

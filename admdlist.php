@@ -1,8 +1,16 @@
 <?php
    
-   $conn=mysqli_connect('localhost','root','','rdw');
+   $conn=mysqli_connect('localhost','root','','rdw1');
    $sql="SELECT * FROM  user  ";
    $result=mysqli_query($conn,$sql);
+
+   $sql1="SELECT * FROM  driver";
+   $result1=mysqli_query($conn,$sql1);
+
+   
+
+
+
 
 //    echo $sql;
 //    return;
@@ -17,7 +25,7 @@
 <html lang="en">   
 <head>   
 <meta charset="utf-8">   
-<title>Insert User Details</title>   
+<title>Check User Details</title>   
 <meta name="description" content="Bootstrap.">  
 <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">   
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -57,12 +65,13 @@
                 <td> <?php echo $row['lastname']?> </td>
                 <td>
 
-                  <a class="btn btn-danger" href="newlicense.php?did=<?php echo $row['users_id']; ?>">Insert</a>
-                  <input type="hidden" value="<?php echo $row = $_GET['did']; ?>" name="foreign_key">'
+                  <a class="btn btn-danger" href="driverprof.php?did=<?php echo $row['driverid']; ?>">view</a>
+                  <input type="number" value="<?php echo $row = $_GET['did']; ?>" name="foreign_key">
                 
                 </td>
               </tr>
               <?php }?>
+
             </tbody>
 
           </table>

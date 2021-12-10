@@ -5,12 +5,11 @@
     } 
    
 
-    $connection= mysqli_connect('localhost','root','','rdw');
+    $connection= mysqli_connect('localhost','root','','rdw1');
     $msg= "" ;     
 
 
     if(isset($_POST['submit'])){
-        // $usersid= $_POST['users_id'];
         $drname=$_POST['drname'];
         $dob=$_POST['dob'];
         $col=$_POST['col'];
@@ -21,8 +20,6 @@
         $dphoto = "lcpic/".basename($_FILES['file']['name']);
       
         //image Upload
-    
-      //  move_uploaded_file($_FILES['file']['tmp_name'], "../images/lcpic/".$_FILES['file']['name']); 
         
         // $res=false;
         $insert_query="INSERT INTO driver (`drname`, `dob`, `col`, `nationality`, `drlicense`, `doi`, `drlicenseex`, `drphoto`) VALUES ('$drname','$dob','$col','$nation','$drlicense','$doi','$drlicensevalid','$dphoto')";
@@ -31,29 +28,15 @@
         $res= mysqli_query($connection,$insert_query);
 
         if (move_uploaded_file($_FILES['file']['tmp_name'], $dphoto)){
-          $msg = " image uploaded";
+          // $msg = " image uploaded";
         }else{
-          $msg = "Error image not uploaded";
+          // $msg = "Error image not uploaded";
         }
   
     
   }
   else{
       echo 'not inserted';
-            
-    //     if($res==true){
-    //         $msg= "<script language='javascript'>
-    //           swal(
-    //           'Success!',
-    //           'Registration Completed!',
-    //           'success'
-    //           );
-		// 		      </script>";
-    //     }
-    //     else{
-    //         die('unsuccessful' .mysqli_error($connection));
-    //     }
-        
         
      }
 
@@ -83,7 +66,7 @@
     <link rel="stylesheet" href="animate.css">
 </head>
 <body>  
- <?php include 'adminnav.php'; ?>
+ <?php include 'navbar.php'; ?>
  <br>
   
   

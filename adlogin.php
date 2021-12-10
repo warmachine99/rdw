@@ -1,6 +1,6 @@
 <?php 
     session_start();
-    $connection=mysqli_connect("localhost","root","","rdw"); 
+    $connection=mysqli_connect("localhost","root","","rdw1"); 
     
     $msg="";
     if(isset($_POST['submit'])){

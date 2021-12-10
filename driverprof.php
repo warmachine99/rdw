@@ -1,10 +1,10 @@
 <?php
-    $connection= mysqli_connect("localhost","root","","rdw");
+    $connection= mysqli_connect("localhost","root","","rdw1");
     session_start();
 
-    $driverid=$_SESSION['user_id']; 
+   
 
-    $sql= "SELECT * FROM driver WHERE driverid='$driverid'"; 
+    $sql= "SELECT * FROM driver"; 
     $res= mysqli_query($connection,$sql);
     $row= mysqli_fetch_assoc($res);
 

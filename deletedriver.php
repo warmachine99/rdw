@@ -1,5 +1,5 @@
 <?php
-   $conn=mysqli_connect('localhost','root','','rdw');
+   $conn=mysqli_connect('localhost','root','','rdw1');
    $sql="SELECT * FROM driver ";
    $result=mysqli_query($conn,$sql);
     if(!isset($_SESSION)) 
@@ -53,8 +53,7 @@
                 <td> <?php echo $row['driverid']?> </td>
                 <td> <?php echo $row['drname']?> </td>
                 <td>
-                 
-                  <a class="btn btn-danger" onclick="return confirm('Are u sure?')" href="deletedr.php? id=<?php echo $row['driverid']; ?>">Delete</a>
+                  <a class="btn btn-danger" onclick="return confirm('Are u sure?')" href="deletedr.php?id=<?php echo $row['driverid']; ?>">Delete</a>
                 </td>
               </tr>
               <?php }?>

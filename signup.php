@@ -5,7 +5,7 @@
     $email = "";
     $errors =array();
     // connect to the database
-    $conn=mysqli_connect("localhost","root","","rdw");
+    $conn=mysqli_connect("localhost","root","","rdw1");
 
     session_start();
     $msg="";

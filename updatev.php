@@ -12,7 +12,7 @@
 
 
 
-   $conn=mysqli_connect('localhost','root','','rdw');
+   $conn=mysqli_connect('localhost','root','','rdw1');
    $sql="UPDATE vehicle SET  regno=?,type=?,chasisno=?,brand=?,color=?,regdate=?, brand=?, picture=?,  WHERE veh_id=?";
      
    echo $sql;

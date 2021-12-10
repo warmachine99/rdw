@@ -12,8 +12,8 @@
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav gabali">
               <li><a href="main.php">Home</a></li>
-              <li><a href="regveh.php">Vehicle</a></li>
-              <li><a href="driverprof.php">License</a></li>
+              <li><a href="registerv.php">Vehicle</a></li>
+              <li><a href="newlicense.php">License</a></li>
 
 
             </ul>

@@ -1,5 +1,5 @@
 <?php
-    $connection= mysqli_connect("localhost","root","","rdw");
+    $connection= mysqli_connect("localhost","root","","rdw1");
 
     session_start();
 
